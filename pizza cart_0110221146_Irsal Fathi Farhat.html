@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <title>Pizza | Cart</title>
+</head>
+<body style="font-family: Poppins; padding: 20px;">
+    <div style="margin: auto; border: 1px solid #000; width: 50%; padding: 20px;">
+        <div style="margin-bottom: 20px;">
+            <h2 style="margin-bottom: 20px;">Black Goose Bistro | Pizza-on-Demand</h2>
+            <p>Our 12' wood-fired pizzas are available for delivery. Build your<br>
+            custom pizza and we'll deliver it within an hour.</p>    
+        </div>
+        <div style="margin-bottom: 10px;">
+            <div>
+                <p>Your Information</p>
+                <p>Name: <input type="text" name="customername"></p>
+                <p>Address: <input type="text" name="address"></p>
+                <p>Telephone Number: <input type="text" name="telephone"></p>
+                <p>Email: <input type="text" name="email"></p>
+            </div>
+            <div>
+                <p>Delivery instructions:</p>
+                <textarea name="instructions" cols="50" rows="5" placeholder="No more than 400 characters long" maxlength="400"></textarea>
+            </div>
+        </div>
+        <div>
+            <div style="margin-bottom: 20px;">
+                <h4>Design Your Dream Pizza:</h4>
+                <p>Pizza specs</p>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <p>Crust (Choose one):</p>
+                <form name="crust">
+                    <ul style="list-style: none; padding-inline-start: 20px;">
+                        <li>(<input type="radio" name="crust">) Classic white</li>
+                        <li>(<input type="radio" name="crust">) Multigrain</li>
+                        <li>(<input type="radio" name="crust">) Cheese-stuffed crust</li>
+                        <li>(<input type="radio" name="crust">) Glutten-free</li>
+                    </ul>
+                </form>
+                <p>Toppings (Choose as many as you want):</p>
+                <form name="toppings[]">
+                    <ul style="list-style: none; padding-inline-start: 20px;">
+                        <li>[<input type="checkbox" name="toppings[]" checked>] Red sauce</li>
+                        <li>[<input type="checkbox" name="toppings[]">] White sauce</li>
+                        <li>[<input type="checkbox" name="toppings[]">] Mozzarella Cheese</li>
+                        <li>[<input type="checkbox" name="toppings[]">] Pepperoni</li>
+                        <li>[<input type="checkbox" name="toppings[]">] Mushrooms</li>
+                        <li>[<input type="checkbox" name="toppings[]">] Peppers</li>
+                        <li>[<input type="checkbox" name="toppings[]">] Anchovies</li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <p>Number</p>
+            <p>How many pizzas: <input name="number" type="number" min="1" max="6" value="1" title="Qty" style="width: 25px;"></p>
+        </div>
+        <div>
+            <a href="pizza checkout_0110221146_Irsal Fathi Farhat.html"><button>Bring me a pizza!</button></a>
+            <button onclick="window.location.reload();">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
