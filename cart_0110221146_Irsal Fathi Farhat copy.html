@@ -6,7 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch%3A">
 </head>
-<body bgcolor="#e8f4ff" style="margin: 0; padding: 0; font-family: Poppins;">
+<body style="background-color: #e8f4ff; margin: 0; padding: 0; font-family: Poppins;">
     <header>
         <nav style="display: flex; align-items: center; justify-content:space-between; padding: 20px 50px 20px 50px; background-color: rgb(207, 207, 207); border-bottom: 3px solid #303030;">
             <div>
@@ -23,66 +23,69 @@
         </nav>
     </header>
     <div style="display: flex; padding: 50px;">
-        <table align="left" width="78%">
+        <table style="align-items: flex-start; width: 78%;">
             <tr>
                 <td><h1 style="margin: 0;">Your Cart</h1></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr><td colspan="3"><hr style="border: none; height: 2px; background-color: #303030;"></td></tr>
-            <tr align="left">
+            <tr style="text-align: left;">
                 <th>Item</th>
                 <th>Price</th>
                 <th>Quantity</th>
             </tr>
             <tr><td colspan="3"><hr style="border: none; height: 2px; background-color: #303030;"></td></tr>
             <tr>
-                <td><br></td>
+                <td colspan="3"><br></td>
             </tr>
-            <tr align="left">
+            <tr style="text-align: left;">
                 <td style="display: flex; align-items: center; justify-content: left; text-align: start;"><img style="margin-right: 20px;" src="assets/img/Untitled-1.png" alt="T-Shirt" width="250"><b>T-Shirt<br>Size: Small</b></td>
                 <td><b>$20.00</b></td>
-                <td><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""></td>
+                <td><input type="number" step="1" min="1" max="9" name="quantity" value="1" title="Qty" class="input-text qty text"></td>
             </tr>
             <tr>
-                <td><br></td>
+                <td colspan="3"><br></td>
             </tr>
             <tr><td colspan="3"><hr style="border: none; height: 2px; background-color: #303030;"></td></tr>
-            <tr align="right">
+            <tr style="text-align: right;">
                 <td colspan="3">Subtotal: <b>$20.00</b></td>
             </tr>
             <tr><td colspan="3"><hr style="border: none; height: 2px; background-color: #303030;"></td></tr>
         </table>
-        <table width="22%" align="right" style="background-color: rgb(207, 207, 207); margin-left: 20px; padding: 0 20px 20px; height: 50%;">
+        <table style="width: 22%; align-items: flex-end; background-color: rgb(207, 207, 207); margin-left: 20px; padding: 0 20px 20px; height: 50%;">
             <tr>
                 <td><h3>Summary (1 Item)</h3></td>
+                <td></td>
             </tr>
             <tr>
                 <td>Subtotal</td>
-                <td style="text-align: end;">$20.00</td>
+                <td style="text-align: right;">$20.00</td>
             </tr>
             <tr>
                 <td>Shipping</td>
-                <td style="text-align: end;">-</td>
+                <td style="text-align: right;">-</td>
             </tr>
             <tr>
                 <td>Est. Taxes</td>
-                <td style="text-align: end;">-</td>
+                <td style="text-align: right;">-</td>
             </tr>
             <tr>
                 <td colspan="2"><hr style="border: none; height: 2px; background-color: #303030;"></td>
             </tr>
             <tr>
                 <td>Total</td>
-                <td style="text-align: end;">$20.00</td>
+                <td style="text-align: right;">$20.00</td>
             </tr>
-            <tr align="center">
+            <tr style="align-items: center;">
                 <td colspan="2"><a href="checkout_0110221146_Irsal Fathi Farhat.html"><button style="color: #fff; background-color: #4287f5; border-width: 4px; border-color: #303030; width: 100%; height: 35px; font-weight: bold;">Checkout</button></a></td>
             </tr>
         </table>
     </div>
-    <footer style="position:absolute; width: 100%; display: flex; bottom: 0; border-top: 3px solid #303030;">
-        <table align="left" width="82%" style="padding: 0px 0px 0 50px;">
+    <footer style="position: relative; width: 100%; display: flex; bottom: 0; border-top: 3px solid #303030; ">
+        <table style="width: 82%; align-items: flex-start; padding: 0px 0px 0 50px;">
             <tr style="display: flex; align-items: center; justify-content: left; text-align: start;">
-                <td><b><p style="margin-right: 50px;">Belanja Online</p></b></td>
+                <td><p style="margin-right: 50px; font-weight: bold;">Belanja Online</p></td>
                 <td><a href="#">Home</a> | </td>
                 <td><a href="#">About</a> | </td>
                 <td><a href="#">Cart</a></td>
@@ -90,10 +93,10 @@
             <tr style="display: flex; align-items: center; justify-content: left; text-align: start;">
                 <td><a href="#"><img width="32" src="/assets/icons/visa.png" alt=""></a></td>
                 <td><a href="#"><img width="32" src="/assets/icons/mc_symbol_opt_73_1x.png" alt=""></a></td>
-                <td><a href="#"><img width="32" src="/assets/icons/AXP_BlueBoxLogo_EXTRALARGEscale_RGB_DIGITAL_1600x1600.png" alt=""></a></td>
+                <td colspan="2"><a href="#"><img width="32" src="/assets/icons/AXP_BlueBoxLogo_EXTRALARGEscale_RGB_DIGITAL_1600x1600.png" alt=""></a></td>
             </tr>
         </table>
-        <table align="right" width="18%" style="padding: 0px 50px 0 0;">
+        <table style="align-items: flex-end; width: 18%; padding: 0px 50px 0 0;">
             <tr>
                 <td colspan="2">Stay In Touch! Join our Newsletter.</td>
             </tr>
