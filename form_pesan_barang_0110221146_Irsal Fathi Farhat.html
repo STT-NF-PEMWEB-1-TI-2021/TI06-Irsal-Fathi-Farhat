@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <title>Shop Item</title>
+</head>
+<body style="font-family: Poppins; padding: 20px; background-color: #e8f4ff; padding: 50px;">
+    <div style="margin-bottom: 25px;">
+        <nav style="align-items: center; margin: auto; background-color: white; padding: 0 20px; border: 2px solid black;">
+            <ul style="display: flex; list-style: none; justify-content: space-between; padding-inline-start: unset;">
+                <li>Home |</li>
+                <li>Generate Link |</li>
+                <li>Transaction History |</li>
+                <li>Policy |</li>
+                <li>Logout |</li>
+            </ul>
+        </nav>
+    </div>
+    <div style="display: flex;">
+        <table style="width: 30%; height: 50%;">
+            <tr>
+                <td><img src="/assets/img/Untitled-1.png" alt="T-Shirt" style="width: 80%;"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button style="padding: 5px; width: 40%;"><label for="file">Upload Picture</label></button>
+                    <input style="visibility: hidden;" type="file" id="file" name="file" >
+                </td>
+            </tr>
+        </table>
+        <table style="width: 70%;">
+            <tr>
+                <td>Title Here :</td>
+                <td><input type="text" value="Macbook Air $800" style="width: 70%;"></td>
+            </tr>
+            <tr>
+                <td style="vertical-align: unset;">Description :</td>
+                <td><textarea name="description" id="description" style="width: 70%; height: 100px; resize: none;"></textarea></td>
+            </tr>
+            <tr>
+                <td>Account Number :</td>
+                <td><input type="tel" value="123-456-789-0" style="width: 70%;"></td>
+            </tr>
+            <tr>
+                <td>Bank :</td>
+                <td>
+                    <select name="bank" id="bank" style="width: 40%;">
+                        <option value="hsbc">HSBC</option>
+                        <option value="bni">BNI</option>
+                        <option value="mandiri">Mandiri</option>
+                        <option value="bca">BCA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Account Holder :</td>
+                <td><input type="text" placeholder="Name Here" style="width: 45%;"></td>
+            </tr>
+            <tr>
+                <td>Transaction :</td>
+                <td><input type="number" name="transaction" id="transaction" min="1" max="3" step="1" value="1" style="width: 25px;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="font-size: 12px; font-weight: bold;">* if the transaction is for 3 person, choose 3 from the drop-down list</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <form>
+                        <p><input type="checkbox" name="phone" id="phone" checked> Send to Mobile phone</p>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <form>
+                        <p><input type="checkbox" name="email" id="email" checked> Send to Email</p>
+                    </form>
+                </td>
+            </tr>
+            <tr style="height: 20px;">
+                <td></td>
+            </tr>
+            <tr>
+                <td>Send to Mobile Phone :</td>
+                <td><input type="text" name="text-phone" id="text-phone" style="width: 50%;" value="1234567890, 1234567891"></td>
+            </tr>
+            <tr>
+                <td>Send to Email</td>
+                <td><input type="text" name="text-email" id="text-email" style="width: 50%;" value="mfmm2g12@soton.ac.uk, fys_06@yahoo.com"></td>
+            </tr>
+            <tr style="height: 150px;">
+                <td></td>
+                <td><button style="color: #fff; background-color: green; border-width: 4px; border-color: #202020; width: 30%; height: 35px; font-weight: bold;">Generate Nabr Link</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
