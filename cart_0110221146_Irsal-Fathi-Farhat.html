@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Belanja Online | Checkout</title>
+    <title>Belanja Online | Cart</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch%3A">
 </head>
@@ -16,8 +16,8 @@
                 <a style="font-size: larger;" href="#">Cart</a>
             </div>
             <div style="display: flex; align-items: center; justify-content:space-around;">
-                <a style="margin-right: 10px;" href=""><img src="/assets/icons/Search.png" alt="search"></a>
-                <a style="margin-right: 10px;" href=""><img src="/assets/icons/Shopping Cart.png" alt="shopping-cart"></a>
+                <a style="margin-right: 10px;" href=""><img src="/assets/icons/Search.png" alt=""></a>
+                <a style="margin-right: 10px;" href=""><img src="/assets/icons/Shopping-Cart.png" alt=""></a>
                 <b><span style="font-size: larger;">Cart (1)</span></b>
             </div>         
         </nav>
@@ -25,54 +25,38 @@
     <div style="display: flex; padding: 50px;">
         <table style="align-items: flex-start; width: 78%;">
             <tr>
-                <td style="display: flex; align-items: center; justify-content: left; text-align: start;"><img style="margin-right: 20px;" src="/assets/icons/baseline_check_circle_outline_black_24dp.png" alt="cheklist"><b>Order 131217312<br><span style="font-size: 1.5em;">Thank you, Irsal!</span></b></td>
+                <td><h1 style="margin: 0;">Your Cart</h1></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr><td colspan="3"><hr style="border: none; height: 2px; background-color: #303030;"></td></tr>
-            <tr>
-                <td colspan="3"><h3 style="margin: 0;">Your order is confirmed.</h3></td>
-            </tr>
-            <tr>
-                <td colspan="3"><h3 style="margin: 0;">We've accepted your order and we're getting it ready.</h3><br></td>
+            <tr style="text-align: left;">
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
             </tr>
             <tr><td colspan="3"><hr style="border: none; height: 2px; background-color: #303030;"></td></tr>
-            <tr>
-                <td colspan="3"><br><h2 style="margin: 0;">Customer Information</h2><br></td>
-            </tr>
-            <tr style="text-align: left;">
-                <th>Shipping Address</th>
-                <th colspan="2">Billing Address</th>
-            </tr>
-            <tr style="text-align: left;">
-                <td>Irsal Fathi Farhat</td>
-                <td colspan="2">Irsal Fathi Farhat</td>
-            </tr>
-            <tr style="text-align: left;">
-                <td><a href="#">12 Waldo Point Road<br>
-                    Mishauken, NY 11200<br>
-                    United States</a></td>
-                <td colspan="2"><a href="#">12 Waldo Point Road<br>
-                    Mishauken, NY 11200<br>
-                    United States</a></td>
-            </tr>
             <tr>
                 <td colspan="3"><br></td>
             </tr>
             <tr style="text-align: left;">
-                <th>Shipping Method</th>
-                <th colspan="2">Payment Method</th>
+                <td style="display: flex; align-items: center; justify-content: left; text-align: start;"><img style="margin-right: 20px;" src="assets/img/Untitled-1.png" alt="T-Shirt" width="250"><b>T-Shirt<br>Size: Small</b></td>
+                <td><b>$20.00</b></td>
+                <td><input type="number" step="1" min="1" max="9" name="quantity" value="1" title="Qty" class="input-text qty text"></td>
             </tr>
-            <tr style="text-align: left;">
-                <td>UPS Ground (Estimated ship<br>
-                    time of 3-6 days)</td>
-                <td colspan="2" style="display: flex; align-items: center; justify-content: left; text-align: start;"><img width="32" src="/assets/icons/visa.png" alt="" style="margin-right: 10px;">Ending in 3217 - $23.60</td>
+            <tr>
+                <td colspan="3"><br></td>
+            </tr>
+            <tr><td colspan="3"><hr style="border: none; height: 2px; background-color: #303030;"></td></tr>
+            <tr style="text-align: right;">
+                <td colspan="3">Subtotal: <b>$20.00</b></td>
             </tr>
             <tr><td colspan="3"><hr style="border: none; height: 2px; background-color: #303030;"></td></tr>
         </table>
         <table style="width: 22%; align-items: flex-end; background-color: rgb(207, 207, 207); margin-left: 20px; padding: 0 20px 20px; height: 50%;">
             <tr>
-                <td colspan="2"><h3>Summary (1 Item)</h3></td>
+                <td><h3>Summary (1 Item)</h3></td>
+                <td></td>
             </tr>
             <tr>
                 <td>Subtotal</td>
@@ -80,33 +64,26 @@
             </tr>
             <tr>
                 <td>Shipping</td>
-                <td style="text-align: right;">$2.20</td>
+                <td style="text-align: right;">-</td>
             </tr>
             <tr>
                 <td>Est. Taxes</td>
-                <td style="text-align: right;">$1.40</td>
-            </tr>
-            <tr>
-                <td colspan="2"><hr style="border: none; height: 2px; background-color: #303030;"></td>
-            </tr>
-            <tr>
-                <td colspan="2">Gift card or discount code</td>
-            </tr>
-            <tr>
-                <td><input type="text" placeholder="#EXAMPLE" style="width: 95%;"></td>
-                <td><button>Apply</button></td>
+                <td style="text-align: right;">-</td>
             </tr>
             <tr>
                 <td colspan="2"><hr style="border: none; height: 2px; background-color: #303030;"></td>
             </tr>
             <tr>
                 <td>Total</td>
-                <td style="text-align: right;">$23.60</td>
+                <td style="text-align: right;">$20.00</td>
+            </tr>
+            <tr style="align-items: center;">
+                <td colspan="2"><a href="checkout_0110221146_Irsal Fathi Farhat.html"><button style="color: #fff; background-color: #4287f5; border-width: 4px; border-color: #303030; width: 100%; height: 35px; font-weight: bold;">Checkout</button></a></td>
             </tr>
         </table>
     </div>
-    <footer style="position: relative; width: 100%; display: flex; bottom: 0; border-top: 3px solid #303030;">
-        <table style="align-items: flex-start; width: 82%; padding: 0px 0px 0 50px;">
+    <footer style="position: relative; width: 100%; display: flex; bottom: 0; border-top: 3px solid #303030; ">
+        <table style="width: 82%; align-items: flex-start; padding: 0px 0px 0 50px;">
             <tr style="display: flex; align-items: center; justify-content: left; text-align: start;">
                 <td><p style="margin-right: 50px; font-weight: bold;">Belanja Online</p></td>
                 <td><a href="#">Home</a> | </td>
@@ -119,7 +96,7 @@
                 <td colspan="2"><a href="#"><img width="32" src="/assets/icons/AXP_BlueBoxLogo_EXTRALARGEscale_RGB_DIGITAL_1600x1600.png" alt=""></a></td>
             </tr>
         </table>
-        <table style="width: 18%; align-items: flex-end; padding: 0px 50px 0 0;">
+        <table style="align-items: flex-end; width: 18%; padding: 0px 50px 0 0;">
             <tr>
                 <td colspan="2">Stay In Touch! Join our Newsletter.</td>
             </tr>
