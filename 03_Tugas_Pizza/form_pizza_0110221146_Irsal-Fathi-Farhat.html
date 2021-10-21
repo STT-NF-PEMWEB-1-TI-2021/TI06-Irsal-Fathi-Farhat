@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <title>Pizza | Cart</title>
+</head>
+<body style="font-family: Poppins; padding: 20px; background-color: #e8f4ff;">
+    <div style="margin: auto; border: 1px solid #000; width: 50%; padding: 20px; background-color: #fff;">
+        <div style="margin-bottom: 20px;">
+            <h2 style="margin-bottom: 20px;">Black Goose Bistro | Pizza-on-Demand</h2>
+            <p>Our 12" wood-fired pizzas are available for delivery. Build your<br>
+            custom pizza and we'll deliver it within an hour.</p>    
+        </div>
+        <div style="margin-bottom: 10px;">
+            <div>
+                <p>Your Information</p>
+                <form action="/03_Tugas_Pizza/pesanan_pizza_0110221146_Irsal-Fathi-Farhat.html" method="post">
+                    <label for="customername" id="name">Name: </label>
+                    <input type="text" name="customernames" id="customername"><br>
+                    <label for="addressname" id="address">Address: </label>
+                    <input type="text" name="addressnames" id="addressname"><br>
+                    <label for="telephonenumber" id="telephones">Telephone Number: </label>
+                    <input type="tel" name="telephonenumbers" id="telephonenumber"><br>
+                    <label for="emailnumber" id="email">Email: </label>
+                    <input type="email" name="emailnumbers" id="emailnumber"><br>
+                </form>
+            </div>
+            <div>
+                <form action="/03_Tugas_Pizza/pesanan_pizza_0110221146_Irsal-Fathi-Farhat.html" method="post">
+                    <p>Delivery instructions:</p>
+                    <label for="instructions">
+                        <textarea id="instructions" cols="50" rows="5" placeholder="No more than 400 characters long" maxlength="400" style="resize: none;"></textarea>
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div>
+            <div style="margin-bottom: 20px;">
+                <h4>Design Your Dream Pizza:</h4>
+                <p>Pizza specs</p>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <form action="/03_Tugas_Pizza/pesanan_pizza_0110221146_Irsal-Fathi-Farhat.html" method="post">
+                    <p>Crust (Choose one):</p>
+                    <ul style="list-style: none; padding-inline-start: 20px;">
+                        <li>
+                            (<input type="radio" name="crust" id="classicwhite">)
+                            <label for="classicwhite">Classic white</label>
+                        </li>
+                        <li>
+                            (<input type="radio" name="crust" id="multigrain">)
+                            <label for="multigrain">Multigrain</label>
+                        </li>
+                        <li>
+                            (<input type="radio" name="crust" id="cheesestuffedcrust">)
+                            <label for="cheesestuffedcrust">Cheese-stuffed crust</label>
+                        </li>
+                        <li>
+                            (<input type="radio" name="crust" id="gluttenfree">)
+                            <label for="gluttenfree">Glutten-free</label>
+                        </li>
+                    </ul>
+                </form>
+                <form action="/03_Tugas_Pizza/pesanan_pizza_0110221146_Irsal-Fathi-Farhat.html" method="post">
+                    <p>Toppings (Choose as many as you want):</p>
+                    <ul style="list-style: none; padding-inline-start: 20px;">
+                        <li>
+                            [<input type="checkbox" name="toppings[]" id="redsauce" checked>]
+                            <label for="redsauce">Red Sauce</label>
+                        </li>
+                        <li>
+                            [<input type="checkbox" name="toppings[]" id="whitesauce">]
+                            <label for="whitesauce">White Sauce</label>
+                        </li>
+                        <li>
+                            [<input type="checkbox" name="toppings[]" id="mozarellacheese">]
+                            <label for="mozarellacheese">Mozzarella Cheese</label>
+                        </li>
+                        <li>
+                            [<input type="checkbox" name="toppings[]" id="pepperoni">]
+                            <label for="pepperoni">Pepperoni</label>
+                        </li>
+                        <li>
+                            [<input type="checkbox" name="toppings[]" id="mushrooms">]
+                            <label for="mushrooms">Mushrooms</label>
+                        </li>
+                        <li>
+                            [<input type="checkbox" name="toppings[]" id="peppers">]
+                            <label for="peppers">Peppers</label>
+                        </li>
+                        <li>
+                            [<input type="checkbox" name="toppings[]" id="anchovies">]
+                            <label for="anchovies">Anchovies</label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <form action="/03_Tugas_Pizza/pesanan_pizza_0110221146_Irsal-Fathi-Farhat.html" method="post">
+                <p>Number</p>
+                <label for="pizza">How many pizzas: </label>
+                <select name="number" id="pizza">
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                    <option value="1">4</option>
+                    <option value="1">5</option>
+                    <option value="1">6</option>
+                </select>
+            </form>
+        </div>
+        <div>
+            <form action="/03_Tugas_Pizza/pesanan_pizza_0110221146_Irsal-Fathi-Farhat.html" method="get">
+                <input type="submit" name="submit" value="Bring me a pizza!">
+                <input type="reset" value="Reset" onclick="window.location.reload()">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
