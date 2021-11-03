@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #e8f4ff;
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px 20px 50px;
+  background-color: rgb(207, 207, 207);
+  border-bottom: 3px solid #303030;
+}
+
+.categories a {
+  font-size: larger;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.right-nav a {
+  margin-right: 10px;
+}
+
+.body-content {
+  display: flex;
+  padding: 50px;
+  flex-direction: row;
+  margin-bottom: 20vh;
+}
+
+.body-content #table-1 {
+  align-items: flex-start;
+  width: 78%;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #303030;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+tr.left-align {
+  text-align: left;
+}
+
+tr.right-align {
+  text-align: right;
+}
+
+.brand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: start;
+}
+
+.body-content #table-2 {
+  width: 22%;
+  align-items: flex-end;
+  background-color: rgb(207, 207, 207);
+  margin-left: 20px;
+  padding: 0 20px 20px;
+  height: 50%;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  border-top: 3px solid #303030;
+}
+
+footer #table-3 {
+  align-items: flex-start;
+  width: 82%;
+  padding: 0px 0px 0 50px;
+}
+
+footer #table-4 {
+  width: 18%;
+  align-items: flex-end;
+  padding: 0px 50px 0 0;
+}
