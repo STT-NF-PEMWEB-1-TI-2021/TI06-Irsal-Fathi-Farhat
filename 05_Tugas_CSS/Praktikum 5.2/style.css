@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#body-content {
+    margin: 20px;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+}
+
+.row-1 {
+    height: 35vh;
+}
+
+.row-2 {
+    height: 30vh;
+}
+
+.float {
+    float: left;
+}
+
+.float:first-child {
+    float: left;
+    margin-right: 30px;
+}
+
+.box-panjang {
+    height: 20vh;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.box-kecil {
+    min-width: 20%;
+}
+
+.box-besar {
+    width: 100%;
+}
+
+.margin:not(last-child) {
+    margin-bottom: 30px;
+}

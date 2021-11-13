@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#body-content {
+    margin: 20px;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.float1,
+.float2 {
+    float: left;
+}
+
+.row-1 {
+    height: 10vh;
+}
+
+.row-2 {
+    height: 80vh;
+}
+
+.box-panjang {
+    height: 10vh;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.box-kecil {
+    min-width: 15%;
+}
+
+.box-besar1 {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.box-besar2 {
+    width: 100%;
+    margin: 0 20px;
+}
+
+.margin:not(last-child) {
+    margin-bottom: 20px;
+}
