@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+    <script>
+      function message() {
+        let m = document.getElementById("pesan")
+        const e = document.getElementById("div1")
+        const p = document.createElement("p")
+        const n = document.createTextNode(m.value)
+        p.appendChild(n)
+        e.appendChild(p)
+        m.addEventListener("keypressed", function(event) {
+          if (event.key === "Enter") {
+            event.preventDefault()
+            document.getElementById("kirim").click()
+          }
+        })
+        m = document.getElementById("pesan").value=""
+      }
+      function reset() {
+        m = document.getElementById("pesan").value=""
+      }
+    </script>
+    <style>
+      p {
+        margin: 0;
+      }
+    </style>
+</head>
+<body>
+  <div style="position: relative; border: 1px solid black; min-height: 50vh; max-width: 50%;">
+    <div id="div1" style="overflow:auto; height: 50vh; margin-bottom: 30px;">
+    </div>
+    <div style="position: absolute; width: 100%; bottom: 0; background-color: whitesmoke; border-top: 1px solid grey;">
+      <div style="display: flex; padding: 2px;">
+        <input type="text" id="pesan" style="width: 100%; margin-right: 2px;" placeholder="Ketik disini..." onchange="message()" on="reset()"><input type="button" id="kirim" value="Kirim" onsubmit="reset()">
+      </div>
+    </div>    
+  </div>
+</body>
+</html>

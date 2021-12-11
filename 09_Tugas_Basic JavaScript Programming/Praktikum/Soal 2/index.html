@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2</title>
+    <script>
+        function kurs() {
+            let d = Number(document.getElementById("dollar").value)
+            let r = d * 14650
+            document.getElementById("rupiah").value=r
+        }
+    </script>
+</head>
+<body>
+    <form id="frm1">
+        $ <input type="number" id="dollar" value="0" onchange="kurs()">
+        Rp. <input type="number" id="rupiah" value="0">
+    </form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1</title>
+    <script>
+        function kurs() {
+            let n = Number(document.getElementById("nilai").value)
+            function region() {
+                let v = document.getElementById("valas")
+                if (v.value == 9915) {
+                    j = 9915 * n
+                    return 9915 * n
+                } else if (v.value == 13472) {
+                    j = 13472 * n
+                    return j
+                } else if (v.value == 874) {
+                    j = 874 * n
+                    return j
+                } else if (v.value == 120) {
+                    j = 120 * n
+                    return j
+                } else if (v.value == 15888) {
+                    j = 15888 * n
+                    return j
+                } else if (v.value == 3592) {
+                    j = 3592 * n
+                    return j
+                }
+            }
+            document.getElementById("hasil").value=region()
+        }
+        function reset() {
+            n = Number(document.getElementById("nilai").value = 0)
+        }
+    </script>
+</head>
+<body>
+    <fieldset style="background-color: aliceblue; width: fit-content;">
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table style="border: 1px solid black; border-collapse: collapse;">
+            <tr>
+                <th>Masukkan Nilai</th>
+                <th>Valas</th>
+                <th>Nilai Rupiah</th>
+            </tr>
+            <tr>
+                <td><input type="number" id="nilai" value="0" onchange="kurs()" min="0"></td>
+                <td>
+                    <select name="valas" id="valas" onchange="region()" onclick="reset()">
+                        <option value="9915">Dollar US</option>
+                        <option value="13472">Dollar Singapore</option>
+                        <option value="874">Ringgih Malaysia</option>
+                        <option value="120">Yen Jepang</option>
+                        <option value="15888">Euro</option>
+                        <option value="3592">Riyal Arab Saudi</option>
+                    </select>
+                </td>
+                <td><input type="number" id="hasil" min="0"></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>

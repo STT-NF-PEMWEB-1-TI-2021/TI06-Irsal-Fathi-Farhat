@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 1</title>
+    <script>
+        function lingkaran() {
+            const r = document.getElementById("jari").value
+            const phi = 3.14
+            const l = phi * r * r
+            const k = 2 * phi * r
+            document.getElementById("luas").value=l
+            document.getElementById("keliling").value=k
+        }
+    </script>
+</head>
+<body>
+    <h1>Hitung Luas & Keliling Lingkaran</h1>
+    <p>Jari-jari</p>
+    <input type="number" id="jari" value="0" onchange="lingkaran()">
+    <p>Luas</p>
+    <input type="number" id="luas" value="0">
+    <p>Keliling</p>
+    <input type="number" id="keliling" value="0">
+</body>
+</html>
