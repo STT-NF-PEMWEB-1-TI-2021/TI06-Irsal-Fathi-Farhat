@@ -7,34 +7,62 @@
     <title>Soal 3</title>
     <script>
         function parkir() {
-            let m = document.getElementById("jamMasuk1").value
-            let k = document.getElementById("jamKeluar1").value
-            p = 3000
-            kb = k - m <= 0 ? "Error" : k - m <= 2 ? p : 1000 * (k - m) + 1000
+            const m = document.getElementById("jamMasuk1").value
+            const k = document.getElementById("jamKeluar1").value
+            const p = 3000
+            const kb = k - m <= 1 ? 0 : k - m <= 2 ? p : 1000 * (k - m) + 1000
             document.getElementById("hasil1").value=kb
+            document.getElementById("lama1").value=k-m + " Jam"
         }
         function parkir1() {
-            let m = document.getElementById("jamMasuk2").value
-            let k = document.getElementById("jamKeluar2").value
-            p = 3000
-            kb = k - m <= 0 ? "Error" : k - m <= 2 ? p : 1000 * (k - m) + 1000
+            const m = document.getElementById("jamMasuk2").value
+            const k = document.getElementById("jamKeluar2").value
+            const p = 3000
+            const kb = k - m <= 1 ? 0 : k - m == 2 ? p : 1000 * (k - m) + 1000
             document.getElementById("hasil2").value=kb
+            document.getElementById("lama2").value=k-m + " Jam"
+        }
+        function lama() {
+            
         }
     </script>
 </head>
 <body>
-    <p>Pemarkir 1</p>
-    <input type="number" id="jamMasuk1" value="8" onchange="parkir()" min="0" max="24">
-    <br>
-    <input type="number" id="jamKeluar1" value="10" onchange="parkir()" min="0" max="24">
-    <br>
-    <input type="number" id="hasil1">
-    <br>
-    <p>Pemarkir 2</p>
-    <input type="number" id="jamMasuk2" value="7" onchange="parkir1()" min="0" max="24">
-    <br>
-    <input type="number" id="jamKeluar2" value="11" onchange="parkir1()" min="0" max="24">
-    <br>
-    <input type="number" id="hasil2">
+    <table border="1px solid black" style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <td>Jam Masuk</td>
+            <td>Jam Keluar</td>
+            <td>Lama</td>
+            <td>Keluaran Biaya</td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+                <input style="width: 23.8vw;" type="number" id="jamMasuk1" value="8" onchange="parkir()" min="0" max="24">
+            </td>
+            <td style="width: 25%;">
+                <input style="width: 23.8vw;" type="number" id="jamKeluar1" value="10" onchange="parkir()" min="0" max="24">
+            </td>
+            <td style="width: 25%;">
+                <input style="width: 23.8vw;" type="text" id="lama1" value="2 Jam">
+            </td>
+            <td style="width: 25%;">
+                <input style="width: 23.8vw;" type="number" id="hasil1" value="3000">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input style="width: 23.8vw;" type="number" id="jamMasuk2" value="7" onchange="parkir1()" min="0" max="24">
+            </td>
+            <td>
+                <input style="width: 23.8vw;" type="number" id="jamKeluar2" value="11" onchange="parkir1()" min="0" max="24">
+            </td>
+            <td>
+                <input style="width: 23.8vw;" type="text" id="lama2" value="4 Jam">
+            </td>
+            <td>
+                <input style="width: 23.8vw;" type="number" id="hasil2" value="5000">
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
