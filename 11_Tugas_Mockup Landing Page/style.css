@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset !important;
+}
+
+.r-side a {
+  margin-right: 20px;
+}
+
+.container {
+  padding: 0 !important;
+}
+
+.background {
+  background-color: gainsboro;
+}
+
+.text-left {
+  margin-left: 15px;
+}
