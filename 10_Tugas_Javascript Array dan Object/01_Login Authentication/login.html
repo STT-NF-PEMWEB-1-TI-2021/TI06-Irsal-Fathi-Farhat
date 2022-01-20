@@ -8,12 +8,12 @@
 </head>
 <body>
     <h2>User Login</h2>
-    <form id="login">
+    <form id="login" onsubmit="login(event)">
         <p>Nama</p>
         <input type="text" name="nama" id="nama" value="" placeholder="ahmad2017" size="30" onchange="login()">
         <p>Password</p>
-        <input type="text" name="pass" id="pass" value="" placeholder="integrity" size="30" onchange="login()">
-        <input type="button" value="Login" name="kirim" onclick="login()">
+        <input type="password" name="pass" id="pass" value="" placeholder="integrity" size="30" onchange="login()">
+        <input type="submit" value="Login" name="kirim">
     </form>
     <script src="otentikasi.js"></script>
 </body>

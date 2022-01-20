@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="icon" href="assets/img/favicon.png">
+    <title>SILOKERNF - Register</title>
+</head>
+<body style="background-attachment: fixed; background-size: cover; background-position: center; background-repeat: no-repeat;  background-image: url(https://images.unsplash.com/photo-1444084316824-dc26d6657664?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">
+      <div class="px-4 py-2 my-3 text-center">
+        <h1 class="display-5 fw-bold">Sistem Informasi Lowongan Kerja NF - SILOKERNF</h1>
+    </div>
+
+          <div class="container my-5">
+            <div class="modal modal-signin d-flex position-static" tabindex="-1" role="dialog" id="modalSignin" >
+                    
+                        <div class="modal-dialog w-100" role="document">
+                          <div class="modal-content rounded-5 shadow border-0" style="filter: opacity(95%);">
+                            <div class="text-center p-5 pb-3 border-bottom-0">
+                              <h2 class="fw-bold">Register User</h2>
+                            </div>
+                            <!-- <form class="needs-validation m-3" onsubmit="up2.setCustomValidity(up2.value != up.value ? 'Passwords do not match.' : '')"> -->
+                            <form class="needs-validation m-3" onsubmit="window.location.href = 'adminkit-dev/static/index.html'; return false;">
+
+                              <div class="row mb-0 p-4 pt-0">
+                                <label for="inputText" class="col-4">Nama Lengkap</label>
+                                <p class="col-1">:</p>
+                                <div class="col-7">
+                                  <input type="text" class="form-control" id="inputText"  placeholder="" value="" required>
+                                  <div class="invalid-feedback">
+                                    Masukkan Nama Lengkap Anda.
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row mb-2 p-4 pt-0">
+                                <label for="inputEmail" class="col-4">Email</label>
+                                <p class="col-1">:</p>
+                                <div class="col-7">
+                                  <input type="email" class="form-control" id="inputEmail"  placeholder="" value="" required>
+                                  <div class="invalid-feedback">
+                                    Masukkan Email Anda.
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row mb-2 p-4 pt-0">
+                                <label for="username" class="col-4">Username</label>
+                                <p class="col-1">:</p>
+                                <div class="col-7">
+                                  <input type="username" class="form-control" id="username"  placeholder="" value="" required>
+                                  <div class="invalid-feedback">
+                                    Masukkan Username Anda.
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row mb-2 p-4 pt-0">
+                                <label for="password" class="col-4">Password</label>
+                                <p class="col-1">:</p>
+                                <div class="col-7">
+                                  <input type="password" class="form-control" id="password"  placeholder="" required name="up" minlength="8">
+                                  <div class="invalid-feedback">
+                                    Masukkan Password Anda minimal 8 huruf.
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row mb-2 p-4 pt-0">
+                                <label for="password1" class="col-4">Cek Password</label>
+                                <p class="col-1">:</p>
+                                <div class="col-7">
+                                  <input type="password" class="form-control" id="password1" value="" name="up2" minlength="8">
+                                  <div class="invalid-feedback">
+                                    Cek Kembali Password Anda.
+                                  </div>
+                                </div>
+                              </div>
+
+                              <hr class="row mx-3 col-11">
+                              <div class="text-center">
+                                <button type="submit" href="adminkit-dev/static/index.html" class="mb-4 m-3 btn btn-lg rounded-4 btn btn-outline-primary" type="submit">Daftar</button>
+                              </div>        
+                            </form>
+                          </div>
+                      </div>
+                </div>
+              </div>
+              <footer class="footer py-3 px-5 bg-light">
+                <div class="col-sm-8 col-12 d-flex flex-sm-row flex-column align-items-center justify-content-sm-start justify-content-center">
+                  <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="assets/img/favicon1.png" alt="" style="width: 24px;">
+                  </a>
+                  <span class="text-muted">&copy; <script>document.write(new Date().getFullYear())</script> XCode</span>
+                </div>
+            </footer>
+
+</body>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</html> 

@@ -9,13 +9,13 @@
 <body>
     <div id="container">
         <h2>Form Validation</h2>
-        <form id="validation" onsubmit="return check(event) && cetak()" novalidate>
+        <form id="validation" novalidate>
             <p>Nama Pelanggan <input type="text" name="nama" id="nama" value="" placeholder="Maksimum 30 Karakter" size="30" required minlength="1" maxlength="30" onchange="login()"> <span style="color: red; font-size: 0.8em;" id="val-1"></span></p>
             <p>Email <input type="email" name="email" id="email" value="" placeholder="example@mail.com" size="30" onchange="login()" required> <span style="color: red; font-size: 0.8em;" id="val-2"></span></p>
             <p>Jam Keberangkatan <input type="time" name="jam" id="jam" value="" placeholder="00.00" size="30" onchange="login()" required> <span style="color: red; font-size: 0.8em;" id="val-3"></span></p>
             <p>Tujuan Keberangkatan <input type="text" name="tujuan" id="tujuan" value="" placeholder="Tempat Tujuan" size="30" onchange="login()" required minlength="1"> <span style="color: red; font-size: 0.8em;" id="val-4"></span></p>
             <p>Jumlah Tiket <input type="number" name="tiket" id="tiket" value="" placeholder="1 - 10" size="30" onchange="login()" required min="1" max="10"> <span style="color: red; font-size: 0.8em;" id="val-5"></span></p>
-            <input type="submit" value="Kirim">
+            <button type="submit" onclick="return check(event) && cetak()">Kirim</button>
             <input type="reset" value="Reset" onclick="window.location.reload()">
         </form>
         <p id="data"></p>

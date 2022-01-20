@@ -1,66 +1,63 @@
 function check(e) {
-  e.preventDefault(); 
-  // (C1) INIT
-  let valid = true, error = "", field = "";
+  e.preventDefault() 
+  let valid = true, error = "", field = ""
   
-  // (C2) NAME
-  field = document.getElementById("nama");
-  error = document.getElementById("val-1");
+  field = document.getElementById("nama")
+  error = document.getElementById("val-1")
   if (!field.checkValidity()) {
-    valid = false;
-    field.classList.add("err");
-    error.innerHTML = "*) Harus lebih dari 1-30 huruf\r\n";
+    valid = false
+    field.classList.add("err")
+    error.innerHTML = "*) Harus lebih dari 1-30 huruf\r\n"
   } else {
-    field.classList.remove("err");
-    error.innerHTML = "";
+    field.classList.remove("err")
+    error.innerHTML = ""
   }
 
-  field = document.getElementById("email");
-  error = document.getElementById("val-2");
+  field = document.getElementById("email")
+  error = document.getElementById("val-2")
   if (!field.checkValidity()) {
-    valid = false;
-    field.classList.add("err");
-    error.innerHTML = "*) Harus ada \"@\" dan \".\"\r\n";
+    valid = false
+    field.classList.add("err")
+    error.innerHTML = "*) Harus ada \"@\" dan \".\"\r\n"
   } else {
-    field.classList.remove("err");
-    error.innerHTML = "";
+    field.classList.remove("err")
+    error.innerHTML = ""
   }
 
-  field = document.getElementById("jam");
-  error = document.getElementById("val-3");
+  field = document.getElementById("jam")
+  error = document.getElementById("val-3")
   if (!field.checkValidity()) {
-    valid = false;
-    field.classList.add("err");
-    error.innerHTML = "*) Harus diisi\r\n";
+    valid = false
+    field.classList.add("err")
+    error.innerHTML = "*) Harus diisi\r\n"
   } else {
-    field.classList.remove("err");
-    error.innerHTML = "";
+    field.classList.remove("err")
+    error.innerHTML = ""
   }
 
-  field = document.getElementById("tujuan");
-  error = document.getElementById("val-4");
+  field = document.getElementById("tujuan")
+  error = document.getElementById("val-4")
   if (!field.checkValidity()) {
-    valid = false;
-    field.classList.add("err");
-    error.innerHTML = "*) Masukkan tempat tujuan\r\n";
+    valid = false
+    field.classList.add("err")
+    error.innerHTML = "*) Masukkan tempat tujuan\r\n"
   } else {
-    field.classList.remove("err");
-    error.innerHTML = "";
+    field.classList.remove("err")
+    error.innerHTML = ""
   }
 
-  field = document.getElementById("tiket");
-  error = document.getElementById("val-5");
+  field = document.getElementById("tiket")
+  error = document.getElementById("val-5")
   if (!field.checkValidity()) {
-    valid = false;
-    field.classList.add("err");
-    error.innerHTML = "*) Jumlah tiket harus diisi 1 - 10\r\n";
+    valid = false
+    field.classList.add("err")
+    error.innerHTML = "*) Jumlah tiket harus diisi 1 - 10\r\n"
   } else {
-    field.classList.remove("err");
-    error.innerHTML = "";
+    field.classList.remove("err")
+    error.innerHTML = ""
   }
   
-  // (C4) RESULT
-  return valid;
+  return valid
 }
 
 function cetak() {

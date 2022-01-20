@@ -1,11 +1,11 @@
-function login() {
+function login(e) {
+    e.preventDefault()
     const nama = document.getElementById("nama").value
     const pass = document.getElementById("pass").value
     if (nama == "ahmad2017" && pass == "integrity") {
         alert("Login Sukses")
         location.href = "sukses.html"
-    }
-    else {
+    } else {
         alert("Login Gagal")
         window.location.reload()
     }
