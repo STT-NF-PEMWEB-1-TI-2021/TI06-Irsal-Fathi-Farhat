@@ -1,0 +1,20 @@
+Evaluasi dan Pertanyaan:
+1. Apa yang dimaksud dengan encapsulation dalam OOP ?
+2. Apa yang dimaksud dengan inheretance dalam OOP ?
+3. Apa fungsi kata kunci berikut ini dalam program PHP
+	• extends
+	• __construct
+	• parent::__construct
+	• parent::cetak() // cetak contoh fungsi
+	• $this->nama : adalah …..
+	• $this->hello() : adalah …..
+
+1. Encapsulation dalam OOP mengacu pada pengumpulan data dengan metode yang beroperasi pada data tersebut, atau pembatasan akses langsung ke beberapa komponen objek.
+2. Inheritance dalam OOP mengacu pada pengadopsian dimana sebuah class dapat menurunkan properti dan methode yang dimilikinya kepada class dibawahnya.
+3. Fungsi dari kata kunci berikut adalah :
+	• extends => berfungsi untuk mewarisi atau menghubungkan properti dan method dari class yang diwarisinya.
+	• __construct => berfungsi untuk menjalankan method secara otomatis pada saat objek di deklarasikan.
+	• parent::__construct => berfungsi untuk mewarisi method construct dari class yang diwarisinya dan dapat ditambahkan sesuai kebutuhan.
+	• parent::cetak() => berfungsi untuk mewarisi method cetak() dari class yang diwarisinya.
+	• $this->nama => berfungsi untuk mengakses property dari dalam class non-static.
+	• $this->hello() => berfungsi untuk mengakses method dari dalam class non-static.

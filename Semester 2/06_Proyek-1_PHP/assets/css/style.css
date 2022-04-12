@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+#image {
+  border: 0;
+}
+
+#imageCard {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+#imageCard:hover {
+  cursor: pointer;
+}
+
+.gambar:checked + label > #imageCard {
+  border: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) { 
+  .container-fluid {
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  }
+}

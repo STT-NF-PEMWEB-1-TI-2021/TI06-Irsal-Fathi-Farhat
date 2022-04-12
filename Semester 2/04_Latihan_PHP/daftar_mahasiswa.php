@@ -31,10 +31,10 @@
             <tbody>
                 <?php
                 require_once "class_mahasiswa.php";
-                $mahasiswa1 = new Mahasiswa(02011, "Faiz Fikri");
-                $mahasiswa2 = new Mahasiswa(02012, "Alissa Khairunnisa");
-                $mahasiswa3 = new Mahasiswa(01011, "Rosalie Naurah");
-                $mahasiswa4 = new Mahasiswa(01012, "Defghi Muhammad");
+                $mahasiswa1 = new Mahasiswa("02011", "Faiz Fikri");
+                $mahasiswa2 = new Mahasiswa("02012", "Alissa Khairunnisa");
+                $mahasiswa3 = new Mahasiswa("01011", "Rosalie Naurah");
+                $mahasiswa4 = new Mahasiswa("01012", "Defghi Muhammad");
                 $totalmahasiswa = array(
                     1 =>
                     array("nim" => $mahasiswa1->nim, "nama" => $mahasiswa1->nama, "prodi" => $mahasiswa1->prodi = "TI", "tahun" => $mahasiswa1->thn_angkatan = 2012, "ipk" => $mahasiswa1->ipk = 3.8, "predikat" => $mahasiswa1->predikat_ipk()),
